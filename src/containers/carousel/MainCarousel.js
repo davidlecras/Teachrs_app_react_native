@@ -44,32 +44,28 @@ export default class MainCarousel extends React.Component {
         {
           teacherFirstname: 'Geoffrey',
           teacherLastname: 'Muller',
-          teacherEducation:
-            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+          teacherEducation: 'Université de Lille',
         },
         {
-          teacherFirstname: 'Dany',
-          teacherLastname: 'Puliga',
-          teacherEducation:
-            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+          teacherFirstname: 'Arielle',
+          teacherLastname: 'Brami',
+          teacherEducation: 'Ecole informatique Paris - Epitech',
         },
         {
-          teacherFirstname: 'Dany',
-          teacherLastname: 'Puliga',
-          teacherEducation:
-            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+          teacherFirstname: 'Cecile',
+          teacherLastname: 'Cerbovski',
+          teacherEducation: 'La Sorbonne',
         },
         {
-          teacherFirstname: 'Dany',
-          teacherLastname: 'Puliga',
+          teacherFirstname: 'Xavier',
+          teacherLastname: 'Niel',
           teacherEducation:
-            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+            'Université de Paris - UFR Mathématiques et Informatique',
         },
         {
-          teacherFirstname: 'Dany',
-          teacherLastname: 'Puliga',
-          teacherEducation:
-            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+          teacherFirstname: 'Virna',
+          teacherLastname: 'Vico',
+          teacherEducation: 'ESSEC',
         },
       ],
     };
@@ -160,7 +156,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#2196F3',
     paddingVertical: 15,
     borderRadius: 5,
-    elevation: 3,
   },
   button2: {
     alignItems: 'center',
@@ -168,6 +163,5 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderColor: '#d9534f',
     borderRadius: 5,
-    elevation: 3,
   },
 });
