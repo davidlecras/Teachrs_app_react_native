@@ -1,6 +1,12 @@
 import * as React from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
-
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  Alert,
+} from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 export default class MainCarousel extends React.Component {
@@ -13,14 +19,57 @@ export default class MainCarousel extends React.Component {
           teacherFirstname: 'David',
           teacherLastname: 'Lecras',
           teacherEducation: 'Université de Nouvelle-Calédonie',
-          Universite: 'Text 1',
         },
         {
           teacherFirstname: 'Dany',
           teacherLastname: 'Puliga',
           teacherEducation:
             'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
-          Universite: 'Text 2',
+        },
+        {
+          teacherFirstname: 'Elodie',
+          teacherLastname: 'Zerdoun',
+          teacherEducation: 'Université Paris Dauphine',
+        },
+        {
+          teacherFirstname: 'Alexis',
+          teacherLastname: 'Compagne',
+          teacherEducation: "IUT des pays de l'adour",
+        },
+        {
+          teacherFirstname: 'Muriel',
+          teacherLastname: 'Benhamou',
+          teacherEducation: 'Université Paris 8',
+        },
+        {
+          teacherFirstname: 'Geoffrey',
+          teacherLastname: 'Muller',
+          teacherEducation:
+            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+        },
+        {
+          teacherFirstname: 'Dany',
+          teacherLastname: 'Puliga',
+          teacherEducation:
+            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+        },
+        {
+          teacherFirstname: 'Dany',
+          teacherLastname: 'Puliga',
+          teacherEducation:
+            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+        },
+        {
+          teacherFirstname: 'Dany',
+          teacherLastname: 'Puliga',
+          teacherEducation:
+            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
+        },
+        {
+          teacherFirstname: 'Dany',
+          teacherLastname: 'Puliga',
+          teacherEducation:
+            'Faculté des Sciences Juridiques, Politiques et Sociales, Université de Lille',
         },
       ],
     };
@@ -51,9 +100,16 @@ export default class MainCarousel extends React.Component {
             méthode d'apprentissage afin de l'aider à progresser au mieux.
           </Text>
         </View>
-        <View>
-          <Text>Actions</Text>
-        </View>
+        <TouchableOpacity
+          style={styles.button1}
+          onPress={() => Alert.alert('Ok on a pris un cours')}>
+          <Text style={{color: 'white'}}>Prendre un cours avec ce Teach'r</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button2}
+          onPress={() => Alert.alert('Il est retiré')}>
+          <Text style={{color: 'red'}}>Retirer ce Teach'r de mes favoris</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -77,12 +133,12 @@ export default class MainCarousel extends React.Component {
 
 const styles = StyleSheet.create({
   _renderItem: {
-    backgroundColor: 'floralwhite',
     borderRadius: 5,
     height: 450,
     padding: 30,
     marginLeft: 25,
     justifyContent: 'space-evenly',
+    elevation: 5,
   },
   styleCarousel: {
     flex: 1,
@@ -98,5 +154,20 @@ const styles = StyleSheet.create({
     height: 45,
     width: 45,
     borderRadius: 50,
+  },
+  button1: {
+    alignItems: 'center',
+    backgroundColor: '#2196F3',
+    paddingVertical: 15,
+    borderRadius: 5,
+    elevation: 3,
+  },
+  button2: {
+    alignItems: 'center',
+    paddingVertical: 15,
+    borderStyle: 'solid',
+    borderColor: '#d9534f',
+    borderRadius: 5,
+    elevation: 3,
   },
 });

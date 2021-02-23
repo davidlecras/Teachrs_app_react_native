@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     paddingVertical: 50,
     paddingLeft: 25,
     justifyContent: 'space-evenly',
-    backgroundColor: '#0275d8',
+    backgroundColor: '#2196F3',
   },
   title: {
     fontWeight: 'bold',
