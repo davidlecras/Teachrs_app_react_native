@@ -129,12 +129,21 @@ export default class MainCarousel extends React.Component {
 
 const styles = StyleSheet.create({
   _renderItem: {
+    borderWidth: 0.5,
+    borderStartColor: 'lightgrey',
+    borderStyle: 'solid',
     borderRadius: 5,
     height: 450,
     padding: 30,
     marginLeft: 25,
     justifyContent: 'space-evenly',
-    elevation: 5,
+    shadowColor: 'grey',
+    shadowOffset: {
+      width: 8,
+      height: 8,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
   },
   styleCarousel: {
     flex: 1,
@@ -162,6 +171,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     borderStyle: 'solid',
     borderColor: '#d9534f',
+    borderWidth: 0.5,
     borderRadius: 5,
   },
 });
